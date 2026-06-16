@@ -303,7 +303,24 @@ C:\Users\91955\AppData\Roaming\Python\Python314\site-packages\whisper\transcribe
 ```
 
 </details>
+---
+### 📈 Speech Recognition Benchmarking & Evaluation Matrix
 
+To determine the optimal operational deployment profile, a comprehensive performance evaluation was executed across all three local model tiers using seven distinct verbal stress-test conditions:
+
+| Evaluation Scenario | Whisper Tiny (Speed / WER) | Whisper Base (Speed / WER) | Whisper Small (Speed / WER) |
+| :--- | :---: | :---: | :---: |
+| **1. Clean Baseline** | 2.74s / 50.00% | 3.29s / 43.75% | **10.75s / 12.50%** |
+| **2. Background Noise** | 1.63s / 13.33% | 4.80s / 26.67% | **9.61s / 13.33%** |
+| **3. Regional Accent** | 1.51s / 6.25% | **4.26s / 0.00%** | **9.56s / 0.00%** |
+| **4. Technical Jargon** | 1.89s / 57.14% | 3.15s / 23.81% | **10.47s / 19.05%** |
+| **5. Speed Mumble** | 1.70s / 35.29% | **2.82s / 5.88%** | **9.32s / 5.88%** |
+| **6. Long Payload** | 4.24s / 22.22% | 7.94s / 25.93% | **23.99s / 17.28%** |
+| **7. Small Payload** | 1.10s / 28.57% | 2.50s / 28.57% | **10.94s / 28.57%** |
+
+*Note: Bold values denote high-performance milestones, showcasing Whisper Small's superior linguistic stability (such as achieving 0.00% Word Error Rate under regional pronunciation challenges) alongside Whisper Base's competitive sub-5-second runtime balance.*
+
+---
 
 ## 🛠️ Technologies Used
 
