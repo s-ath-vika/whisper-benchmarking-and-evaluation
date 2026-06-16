@@ -305,7 +305,7 @@ C:\Users\91955\AppData\Roaming\Python\Python314\site-packages\whisper\transcribe
 </details>
 ---
 
-### 📈 Speech Recognition Benchmarking & Evaluation Matrix
+## 📈 Speech Recognition Benchmarking & Comparison Report
 
 To determine the optimal operational deployment profile, a comprehensive performance evaluation was executed across all three local model tiers using seven distinct verbal stress-test conditions:
 
